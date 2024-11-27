@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Top</title>
+    </head>
+
+<main>
+    {% block contents %}{% endblock  %}
+</main>
+
+    <body>
+        <nav id="g_navi">
+            <ul>
+                <li><a href="{% url "scheduleapp:index" %}">ホーム</a></li>
+                <li><a href="{% url "scheduleapp:post" %}">予定入力</a></li>
+                <li><a href="#">予定確認</a></li>
+                <li><a href="{% url "scheduleapp:contact" %}">お問い合わせ</a></li>
+    
+            </ul>
+        </nav>
+    </body>
+</html>
